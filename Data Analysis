@@ -1,0 +1,9 @@
+import pandas as pd
+
+data = pd.DataFrame({
+    'time': ['2025-02-28 08:00', '2025-02-28 09:00'],
+    'output': [100, 95],
+    'downtime': [5, 10]
+})
+avg_downtime = data['downtime'].mean()
+print(f"Average downtime: {avg_downtime} minutes")
